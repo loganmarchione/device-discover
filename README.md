@@ -1,12 +1,13 @@
 # device-discover
 
-![](https://img.shields.io/badge/Claude%20Assisted-90%25-00a67d?logo=claude)
+[![CI](https://github.com/loganmarchione/device-discover/actions/workflows/main.yml/badge.svg)](https://github.com/loganmarchione/device-discover/actions/workflows/main.yml) ![](https://img.shields.io/badge/Claude%20Assisted-🚀-00a67d?logo=claude)
 
 A higly vibe-coded app to discover SSDP and mDNS devices on your network
 
 ## Explanation
 
-A Python/Flask web app that discovers devices on your local network using Simple Service Discovery Protocol (SSDP) and Multicast DNS (mDNS).
+- I've been working on setting up VLANs for my IoT devices and needed a "dashboard" to see which devices were broadcasting on my subnet
+- This is a Python/Flask web app that discovers devices on your local network using Simple Service Discovery Protocol (SSDP) and Multicast DNS (mDNS)
 
 ## Requirements
 
@@ -40,8 +41,6 @@ Then open: **http://localhost:3001**
 
 **Port already in use?**
 Change the port in `app.py` and `docker-compose.yml`
-
-
 
 ## Development
 
