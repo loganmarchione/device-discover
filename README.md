@@ -32,6 +32,8 @@ docker logs device-discover --follow
 
 Then open: **http://localhost:3001**
 
+![Screenshot](https://raw.githubusercontent.com/loganmarchione/device-discover/refs/heads/main/screenshots/screenshot.png)
+
 ## Troubleshooting
 
 **No devices found?**
