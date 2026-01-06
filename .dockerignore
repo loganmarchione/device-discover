@@ -1,0 +1,173 @@
+################################################################################
+# https://dockerignore.com/dockerignores/languages-python
+################################################################################
+
+# Created by https://dockerignore.com/
+
+# ============================================
+# PYTHON DOCKERIGNORE TEMPLATE
+# ============================================
+# For Python projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Contains only Python specific patterns.
+#
+# Combine with:
+# 1. Framework templates (Django.dockerignore, Flask.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, Cache.dockerignore,
+#    Logs.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, IntelliJ.dockerignore, etc.)
+# 4. OS templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# 5. Version control templates (Git.dockerignore)
+#
+# For a comprehensive standalone template, use framework templates instead
+# (e.g., frameworks/django.dockerignore) which include Python patterns
+# along with framework-specific patterns.
+# ============================================
+
+# ============================================
+# PYTHON COMPILED FILES AND BYTECODE
+# ============================================
+
+# Python bytecode and compiled files
+*$py.class              # Jython compiled classes
+*.py[cod]               # Python compiled files (.pyc, .pyo, .pyd)
+*.py,cover              # Python coverage files
+*.sage.py               # SageMath Python files
+*.so                    # Python C extensions
+__pycache__/            # Python 3 bytecode cache
+cython_debug/           # Cython debug files
+
+# ============================================
+# PYTHON PACKAGE AND DISTRIBUTION FILES
+# ============================================
+
+# Package distribution files
+*.egg                   # Python eggs
+*.egg-info/             # Egg metadata directories
+*.manifest              # Manifest files
+*.mo                    # Compiled message catalogs
+*.pot                   # Message catalog templates
+*.spec                  # RPM spec files
+.eggs/                  # Eggs directory
+.installed.cfg          # Installation configuration
+.instance/              # Instance directories
+.pdm.toml               # PDM configuration
+.python-version         # Python version file
+sdist/                  # Source distribution
+share/python-wheels/    # Python wheels
+wheels/                 # Wheels directory
+
+# ============================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ============================================
+
+# Virtual environment directories
+ENV/                    # Virtual environment
+env.bak/                # Backup virtual environment
+venv.bak/               # Backup virtual environment
+.venv/                  # Virtual environment (common)
+venv/                   # Virtual environment
+env/                    # Virtual environment
+virtualenv/             # Virtual environment
+.uv/                    # uv virtual environment
+
+# ============================================
+# PYTHON PACKAGE MANAGER FILES
+# ============================================
+
+# Package manager lock files
+Pipfile.lock            # Pipenv lock file
+poetry.lock             # Poetry lock file
+
+# Package manager cache and configuration
+.hatch/                 # Hatch configuration
+.hypothesis/            # Hypothesis configuration
+.pdm-build/             # PDM build files
+.pypackages/            # PyPA packages
+__pypackages__/         # PyPA packages directory
+downloads/              # Downloaded packages
+eggs/                   # Eggs directory
+lib/                    # Library directory
+lib64/                  # 64-bit library directory
+parts/                  # Build parts
+pip-delete-this-directory.txt  # pip cleanup marker
+pip-log.txt             # pip log file
+var/                    # Variable data
+
+# ============================================
+# PYTHON TESTING AND DEVELOPMENT
+# ============================================
+
+# Testing tools
+.cover/                 # Coverage directory
+.coverage               # Coverage data
+.coverage.*             # Coverage data variants
+cover/                  # Coverage directory
+coverage.xml            # Coverage XML report
+.mypy_cache/            # MyPy type checking cache
+.nose/                  # Nose configuration
+.nosetests.xml          # Nose test results
+.nox/                   # Nox sessions
+.pytest_cache/          # Pytest cache
+.pyre/                  # Pyre type checker
+.pytype/                # Pytype type checker
+.ruff_cache/            # Ruff cache
+.tox/                   # Tox environments
+.webassets-cache        # Webassets cache
+
+# Development tools
+.dmypy.json             # MyPy daemon configuration
+.ipynb_checkpoints      # Jupyter notebook checkpoints
+.profile_default/       # IPython profile
+.pybuilder/             # PyBuilder configuration
+.pyenv/                 # pyenv configuration
+.Python                 # Python executable
+.scrapy                 # Scrapy configuration
+
+# ============================================
+# PYTHON RUNTIME AND PROCESS FILES
+# ============================================
+
+celerybeat-schedule     # Celery beat schedule
+celerybeat.pid          # Celery beat process ID
+develop-eggs/           # Development eggs
+MANIFEST                # Manifest file
+
+# ============================================
+# USAGE NOTES
+# ============================================
+# This template contains ONLY Python specific patterns.
+#
+# For complete coverage, combine with:
+# 1. Framework template (if using a specific framework)
+#    Example: frameworks/django.dockerignore for Django projects
+#    Note: Framework templates already include Python patterns,
+#    so do NOT combine this template with framework templates.
+#
+# 2. Category templates as needed:
+#    - common/security.dockerignore (for .env*, credentials, etc.)
+#    - common/cache.dockerignore (for additional cache patterns)
+#    - common/logs.dockerignore (for additional log patterns)
+#    - common/backup.dockerignore (for backup files)
+#    - common/git.dockerignore (for version control)
+#
+# 3. IDE templates if using specific editors:
+#    - ides/vscode.dockerignore
+#    - ides/intellij.dockerignore
+#    - ides/vim.dockerignore
+#    - ides/sublime.dockerignore
+#
+# 4. OS templates for cross-platform development:
+#    - os/linux.dockerignore
+#    - os/macos.dockerignore
+#    - os/windows.dockerignore
+#
+# To create a .dockerignore file for a Python project:
+#   cat languages/python.dockerignore \
+#       common/security.dockerignore \
+#       common/cache.dockerignore \
+#       common/logs.dockerignore \
+#       ides/vscode.dockerignore \
+#       os/linux.dockerignore \
+#       os/macos.dockerignore \
+#       os/windows.dockerignore > .dockerignore
+# ============================================
