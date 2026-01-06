@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/loganmarchione/device-discover/actions/workflows/main.yml/badge.svg)](https://github.com/loganmarchione/device-discover/actions/workflows/main.yml) ![](https://img.shields.io/badge/Claude%20Assisted-🚀-00a67d?logo=claude)
 
-A higly vibe-coded app to discover SSDP and mDNS devices on your network
+A highly vibe-coded app to discover SSDP and mDNS devices on your network
 
 ## Explanation
 
