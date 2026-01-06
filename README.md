@@ -24,25 +24,24 @@ pip3 install -r requirements.txt
 gunicorn -w 4 -b 0.0.0.0:3001 --reload src.app:app
 ```
 
+or
+
 ### Docker
 ```
 docker-compose up -d
 docker logs device-discover --follow
 ```
 
-Then open: **http://localhost:3001**
+Then open: http://localhost:3001
 
 ![Screenshot](https://raw.githubusercontent.com/loganmarchione/device-discover/refs/heads/main/screenshots/screenshot.png)
 
 ## Troubleshooting
 
-**No devices found?**
+No devices found?
 - Make sure devices are on the same network
 - Check firewall isn't blocking UDP port 1900
 - If using Docker, ensure `network_mode: host` is set
-
-**Port already in use?**
-Change the port in `app.py` and `docker-compose.yml`
 
 ## Development
 
