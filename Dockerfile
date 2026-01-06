@@ -14,5 +14,5 @@ COPY src/templates/ templates/
 # Expose the port the app runs on
 EXPOSE 3001
 
-# Run the application
-CMD ["python", "app.py"]
+# Run the application with gunicorn
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:3001", "app:app"]

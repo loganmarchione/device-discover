@@ -274,7 +274,3 @@ def index():
         mdns_devices=mdns_devices,
         timestamp=timestamp,
     )
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3001, debug=False)  # nosec

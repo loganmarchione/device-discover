@@ -1,10 +1,12 @@
-# python-device-discover
+# device-discover
 
 ![](https://img.shields.io/badge/Claude%20Assisted-90%25-00a67d?logo=claude)
 
+A higly vibe-coded app to discover SSDP and mDNS devices on your network
+
 ## Explanation
 
-A simple web page that discovers devices on your local network using Simple Service Discovery Protocol (SSDP) and Multicast DNS (mDNS).
+A Python/Flask web app that discovers devices on your local network using Simple Service Discovery Protocol (SSDP) and Multicast DNS (mDNS).
 
 ## Requirements
 
@@ -18,7 +20,7 @@ cd device-discover
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-python3 src/app.py
+gunicorn -w 4 -b 0.0.0.0:3001 --reload src.app:app
 ```
 
 ### Docker

@@ -1,7 +1,7 @@
 services:
-  python-device-discover:
+  device-discover:
     build: .
-    container_name: python-device-discover
+    container_name: device-discover
     ports:
       - "3001:3001"
     network_mode: host
