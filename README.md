@@ -26,6 +26,7 @@ gunicorn -w 4 -b 0.0.0.0:3001 --reload src.app:app
 ### Docker
 ```
 docker-compose up -d
+docker logs device-discover --follow
 ```
 
 Then open: **http://localhost:3001**
