@@ -1,4 +1,4 @@
-.PHONY: lint security test format
+.PHONY: lint format security test
 
 lint:
 	@echo "################################################################################"
